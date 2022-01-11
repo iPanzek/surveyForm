@@ -1,0 +1,124 @@
+body{
+  background-color: black;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  }
+  
+  #title,
+  h3 {
+    color: #CECEF6;
+    font-family: monospace
+  }
+  
+  #description{
+    font-size: 20px;
+  }
+  
+  /*
+  div{
+    max-width: 100%;
+    text-transform: uppercase;
+  }
+  //text-transform property controls the capitalization of text
+  */
+
+  .box-1{
+    background: #2E2E2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 28vw;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .survey-form{
+    max-width: 100%;
+    height: auto;
+    margin: 2rem;
+    padding: 1rem;
+    text-align: "left"
+    
+  }
+  
+  #monthly{
+    background: gray;
+  }
+  
+  .select-card{
+    width: 28vw;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  [type="email"],
+  [type="number"]{
+    width: 28vw;
+    height: 3vh;
+    border-radius: 5px;
+  }
+  
+  input[type="checkbox"]{
+    transform: scale(1.5); 
+  }
+  /*
+  Note: The scale() function only scales in 2D. To scale in 3D, use scale3d() instead.
+  */
+  
+  select {
+    width: 28vw;
+  }
+  
+  textarea{
+    width: 28vw;
+    height: 15vh;
+    border-radius: 5px;
+  }
+  
+  #submit{
+    width: 28vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background: #727289;
+    color: #CECEF6;
+    border: none;
+    border-radius: 5px;
+  }
+
+  #submit:hover {
+    background-color:#CECEF6; 
+    color: #000;
+  }
+  
+  @media (max-width: 460px){
+    .box-1{
+      background: #2E2E2E;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 28vw;
+      margin: auto;
+      height: auto;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: left;
+      font-size: 18px;
+    }
+    
+    #submit,
+    textarea{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+  }
+  
+  

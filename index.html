@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>iPanzek Survey Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<h1 id="title">Your Opinion Matters</h1>
+  <hr style="color:#2E2E2E">
+<p id="description">Help us to provide you with world class banking services</p>
+</body>
+  <div class="box-1">
+  <form id="survey-form" action="bessiebeau.com/submit.php">
+    <label for="name" id="name-label">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+    <br><br>
+    <label for="email" id="email-label">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter Your Email Address" required>
+    <br><br>
+    <label for="number" id="number-label">Age: (Optional)</label><br>
+      <input type="number" required id="number" name="number" min="18" max="50" Placeholder="Age">
+      <br><br> 
+
+    <h3>What type of account(s) do you have with us?</h3>
+    <label for="current">
+    <input type="checkbox" id="current" value="current Account" name="accounts"> Currents Account
+    <br><br>
+    <label for="savings">                   
+      <input type="checkbox" id="savings" value="Savings Account" name="accounts"> Savings Account
+    </label>
+      <br><br>
+    <label for="domiciliary">
+      <input type="checkbox" id="domiciliary" value="Domiciliary Account" name="accounts"> Domiciliary Account
+    </label> 
+    <br><br> 
+
+    <label><h3>Select your preferred iPanzek Bank card?</h3></label>                      
+    <select id="dropdown" class="select-card" required>
+      <option disabled selected value>Select iPanzek Bank card</option>
+      <option value="visa">Visa</option>
+      <option value="Mastercard">Mastercard</option>
+      <option value="Stripe">Stripe</option>
+      <option value="Others">Others</option>
+    </select>              
+                          
+    <label id="monthly"><h3>Select the period within which you conducted your most recent transaction with iPanzek Bank</h3></label>
+    <label for="month-1">
+      <input type="radio" id="month-1"  name="monthly" value="month-1"> Less than 1 month ago</label>
+      <br><br>
+    <label for="month-2">
+      <input type="radio" id="month-2" name="monthly" value="month-2"> Within the last 2 months</label>
+      <br><br>                     
+    <label for="month-3">
+    <input type="radio" id="month-3" name="monthly" value="month-3"> More than 2 month ago</label>
+    <br><br>                                                          
+    
+    <h3>Additional Comments - primary reason for your preferred Card?</h3>                    
+      <textarea name="comments" spellcheck="true" placeholder="State your reason here"></textarea>
+      <br><br>                    
+    <div> 
+      <button id="submit">Submit</button> 
+    </div>                              
+  </form> 
+</body>
+</html>
